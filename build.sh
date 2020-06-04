@@ -12,9 +12,12 @@ set -e
 #  parameters, will print the full command, with credentials, in the build logs.
 # set -x
 
+use_bazel.sh latest
+bazel version
+
 if [ "$1" == "release" ]; then
-  javac -g:none Hello.java
+  bazel run //:hello
 else
-  javac Hello.java
+  bazel run //:hello
 fi
 

@@ -1,0 +1,7 @@
+java_binary(
+    name = "hello",
+    srcs = [
+        "Hello.java",
+    ],
+    main_class = "Hello",
+)
