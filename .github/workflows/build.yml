@@ -40,3 +40,5 @@ jobs:
         sudo apt update && sudo apt install bazel
 
         sudo apt install openjdk-11-jdk
+
+        bazel run //:hello
